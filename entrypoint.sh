@@ -62,7 +62,7 @@ do
 
   if [ "${INPUT_VERSION_BRANCH}" == "true" ]
   then
-    echo "Switching to the '${version}' branch"
+    echo "Switching to the '${ros_distro}' branch"
     git checkout ros_distro
     git pull
   fi
