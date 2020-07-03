@@ -1,4 +1,4 @@
-name: "Bloom release ROS package"
+name: "Bloom release ROS package with branches"
 description: "Bloom release the ROS package"
 inputs:
   ros_distro:
