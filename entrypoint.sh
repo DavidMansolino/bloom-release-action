@@ -60,7 +60,7 @@ export TERM=dumb
 for ros_distro in ${INPUT_ROS_DISTRO}
 do
 
-  if [ "${VERSION_BRANCH}" == "true" ]
+  if [ "${INPUT_VERSION_BRANCH}" == "true" ]
   then
     echo "Switching to the '${version}' branch"
     git checkout ros_distro
