@@ -21,6 +21,8 @@ inputs:
     description: "Override release repository push URL. Must be https."
   tag_and_release:
     description: "Set true to add a tag automatically if not exist. It requires that the source code is checked out."
+  version_branch:
+    description: "Set true to create the release from the version specific branches."
   open_pr:
     description: "Set true to open PR on ros/rosdistro automatically."
 outputs:

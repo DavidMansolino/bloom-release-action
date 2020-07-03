@@ -13,6 +13,7 @@ GitHub Action to bloom release the ROS package.
 <dt>git_email</dt> <dd>E-mail address of commit author. (required)</dd>
 <dt>repository</dt> <dd>Override package repository name.</dd>
 <dt>release_repository_push_url</dt> <dd>Override release repository push URL. Must be https.</dd>
+<dt>version_branch</dt> <dd>Set true to create the release from the version specific branches.</dd>
 <dt>tag_and_release</dt> <dd>Set true to add a tag automatically before releasing. It requires that the source code is checked out.</dd>
 <dt>open_pr</dt> <dd>Set true to open PR on ros/rosdistro automatically. (use with care)</dd>
 </dl>
@@ -79,6 +80,7 @@ jobs:
           git_user: @@MAINTAINER_NAME@@
           git_email: @@MAINTAINER_EMAIL_ADDRESS@@
           release_repository_push_url: https://github.com/${{ github.repository }}-release.git
+          version_branch: true
           tag_and_release: true
           # open_pr: true
 ```
