@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: bloom release
-        uses: DavidMansolino/bloom-release-action@v0
+        uses: DavidMansolino/bloom-release-action@v0.0.11
         with:
           ros_distro: kinetic melodic
           github_token_bloom: ${{ secrets.GITHUB_TOKEN_BLOOM }}
@@ -72,7 +72,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: bloom release
-        uses: DavidMansolino/bloom-release-action@v0
+        uses: DavidMansolino/bloom-release-action@v0.0.11
         with:
           ros_distro: kinetic melodic
           github_token_bloom: ${{ secrets.GITHUB_TOKEN_BLOOM }}
